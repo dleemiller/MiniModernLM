@@ -83,6 +83,7 @@ def main():
     student_config = AutoConfig.from_pretrained(model_args.teacher_model_id)
     student_config.hidden_size = model_args.student_hidden_size
     student_config.intermediate_size = model_args.student_intermediate_size
+    student_config.mlp_dropout = model_args.student_mlp_dropout
     student_config.num_hidden_layers = model_args.student_num_layers
     student_config.num_attention_heads = model_args.student_attention_heads
 

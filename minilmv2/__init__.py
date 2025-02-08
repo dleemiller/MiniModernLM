@@ -15,14 +15,8 @@ limitations under the License.
 Package containing model and utilities for distillation.
 """
 
-from .data_utils import get_tokenized_datasets
 from .minilmv2 import MiniLM
-from .parsers import get_data_parser, get_model_parser, split_args_by_parser
 
 __all__ = [
-    "get_tokenized_datasets",
     "MiniLM",
-    "get_data_parser",
-    "get_model_parser",
-    "split_args_by_parser",
 ]

@@ -6,7 +6,7 @@ OUTPUT_DIR="./out"
 LOG_DIR="${OUTPUT_DIR}/logs"
 
 ARGS="--per_device_train_batch_size 256 \
-      --learning_rate 2e-4 \
+      --learning_rate 6e-4 \
       --adam_epsilon 1e-6 \
       --adam_beta1 0.9 \
       --adam_beta2 0.999 \

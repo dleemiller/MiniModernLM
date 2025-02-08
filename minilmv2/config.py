@@ -46,6 +46,9 @@ class ModelArguments:
     student_global_attn_every_n_layers: int = field(
         default=2, metadata={"help": "Global attention frequency for the student."}
     )
+    student_mlp_dropout: int = field(
+        default=0.1, metadata={"help": "MLP dropout rate."}
+    )
     L: int = field(
         default=22, metadata={"help": "Teacher layer to distill (1-based index)."}
     )
